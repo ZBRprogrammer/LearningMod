@@ -1,6 +1,7 @@
 package com.zombromine.learningmod;
 
 import com.mojang.logging.LogUtils;
+import com.zombromine.learningmod.items.ModCreativeTab;
 import com.zombromine.learningmod.items.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -37,6 +38,7 @@ public class LearningMod
     public LearningMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        ModCreativeTab.register(modEventBus);
         ModItems.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
