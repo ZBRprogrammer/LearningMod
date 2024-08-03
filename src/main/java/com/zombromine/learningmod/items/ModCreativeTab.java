@@ -1,6 +1,7 @@
 package com.zombromine.learningmod.items;
 
 import com.zombromine.learningmod.LearningMod;
+import com.zombromine.learningmod.blocks.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -17,6 +18,7 @@ public class ModCreativeTab {
                     .title(Component.translatable("creativetab.learning_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.FILE_CRYSTALLIZATION.get());
+                        output.accept(ModBlocks.FIRE_CRYSTALLIZATION_BLOCK.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {

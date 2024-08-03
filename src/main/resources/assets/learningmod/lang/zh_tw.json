@@ -1,4 +1,5 @@
 {
   "item.learningmod.fire_crystallization": "火源結晶",
-  "creativetab.learning_tab": "學习模組"
+  "creativetab.learning_tab": "學习模組",
+  "block.learningmod.fire_crystallization_block": "火源結晶块"
 }
