@@ -27,10 +27,10 @@ public class ModBlocks {
         registerBlockItem(name,toReturn);
         return toReturn;
     }
-    public static final RegistryObject<Block>FIRE_CRYSTALLIZATION_BLOCK=registerBlock("fire_crystallization_block",
+    public static final RegistryObject<Block>FIRE_CRYSTALLIZATION_BLOCK=registerBlock("fire_block",
             ()->new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK)
                     .requiresCorrectToolForDrops()
                     .explosionResistance(120.0F)
-                    .strength(10.0F,15.0F)
+                    .strength(6.0F,6.5F)
             ));
 }
