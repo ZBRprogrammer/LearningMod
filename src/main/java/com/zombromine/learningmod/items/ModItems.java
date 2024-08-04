@@ -1,6 +1,7 @@
 package com.zombromine.learningmod.items;
 
 import com.zombromine.learningmod.LearningMod;
+import com.zombromine.learningmod.items.custom.ElementCollector;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,4 +19,6 @@ public class ModItems {
             ()->new Item(new Item.Properties()));
     public static final RegistryObject<Item> GRASS_CRYSTALLIZATION= ModItems.register("grass_crystallization",
             ()->new Item(new Item.Properties()));
+    public static final RegistryObject<Item>ELEMENT_COLLECTOR= ModItems.register("element_collector",
+            ()->new ElementCollector(new Item.Properties().durability(2000)));
 }

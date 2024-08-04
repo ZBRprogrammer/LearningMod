@@ -5,5 +5,6 @@
   "item.learningmod.water_crystallization": "水源结晶",
   "block.learningmod.water_crystallization_block": "水源结晶块",
   "item.learningmod.grass_crystallization": "草源结晶",
-  "block.learningmod.grass_crystallization_block": "草源结晶块"
+  "block.learningmod.grass_crystallization_block": "草源结晶块",
+  "item.learningmod.element_collector": "元素收集器"
 }
