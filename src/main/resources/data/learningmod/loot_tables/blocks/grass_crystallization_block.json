@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "learningmod:fire_crystallization_block"
+          "name": "learningmod:grass_crystallization_block"
         }
       ],
       "rolls": 1.0

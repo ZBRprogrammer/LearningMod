@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "learningmod:grass_crystallization_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "learningmod:grass_crystallization"
+  }
+}

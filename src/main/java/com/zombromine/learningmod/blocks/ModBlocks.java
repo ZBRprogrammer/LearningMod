@@ -33,4 +33,16 @@ public class ModBlocks {
                     .explosionResistance(120.0F)
                     .strength(6.0F,6.5F)
             ));
+    public static final RegistryObject<Block>WATER_CRYSTALLIZATION_BLOCK=registerBlock("water_crystallization_block",
+            ()->new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK)
+                    .requiresCorrectToolForDrops()
+                    .explosionResistance(120.0F)
+                    .strength(6.0F,6.5F)
+            ));
+    public static final RegistryObject<Block>GRASS_CRYSTALLIZATION_BLOCK=registerBlock("grass_crystallization_block",
+            ()->new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK)
+                    .requiresCorrectToolForDrops()
+                    .explosionResistance(120.0F)
+                    .strength(6.0F,6.5F)
+            ));
 }

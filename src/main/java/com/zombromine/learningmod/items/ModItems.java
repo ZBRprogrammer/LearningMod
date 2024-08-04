@@ -14,4 +14,8 @@ public class ModItems {
     }
     public static final RegistryObject<Item> FILE_CRYSTALLIZATION= ModItems.register("fire_crystallization",
             ()->new Item(new Item.Properties()));
+    public static final RegistryObject<Item> WATER_CRYSTALLIZATION= ModItems.register("water_crystallization",
+            ()->new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GRASS_CRYSTALLIZATION= ModItems.register("grass_crystallization",
+            ()->new Item(new Item.Properties()));
 }

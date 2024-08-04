@@ -1,5 +1,9 @@
 {
-  "item.learningmod.fire_crystallization": "火源結晶",
-  "creativetab.learning_tab": "學习模組",
-  "block.learningmod.fire_crystallization_block": "火源結晶块"
+  "creativetab.learning_tab":"學習模組",
+  "item.learningmod.fire_crystallization":"火源結晶",
+  "block.learningmod.fire_crystallization_block":"火源結晶塊",
+  "item.learningmod.water_crystallization":"水源結晶",
+  "block.learningmod.water_crystallization_block":"水源結晶塊",
+  "item.learningmod.grass_crystallization":"草源結晶",
+  "block.learningmod.grass_crystallization_block":"草源結晶塊"
 }

@@ -18,7 +18,11 @@ public class ModCreativeTab {
                     .title(Component.translatable("creativetab.learning_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.FILE_CRYSTALLIZATION.get());
+                        output.accept(ModItems.WATER_CRYSTALLIZATION.get());
+                        output.accept(ModItems.GRASS_CRYSTALLIZATION.get());
                         output.accept(ModBlocks.FIRE_CRYSTALLIZATION_BLOCK.get());
+                        output.accept(ModBlocks.WATER_CRYSTALLIZATION_BLOCK.get());
+                        output.accept(ModBlocks.GRASS_CRYSTALLIZATION_BLOCK.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {
