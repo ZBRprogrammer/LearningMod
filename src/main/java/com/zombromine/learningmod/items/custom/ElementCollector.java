@@ -4,7 +4,6 @@ import com.zombromine.learningmod.items.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -14,9 +13,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import org.jetbrains.annotations.NotNull;
 
-import java.util.Objects;
 import java.util.Random;
 
 public class ElementCollector extends Item {
@@ -110,9 +107,7 @@ public class ElementCollector extends Item {
                 }
             }
         }
-//        itemStack.hurtAndBreak(1,player,LivingEntity.getSlotForHand(hand));
         itemStack.hurtAndBreak(1,player,LivingEntity.getSlotForHand(hand));
-//        player.broadcastBreakEvent(LivingEntity.getSlotForHand(hand));
-        return InteractionResult.CONSUME;
+        return InteractionResult.SUCCESS;
     }
 }

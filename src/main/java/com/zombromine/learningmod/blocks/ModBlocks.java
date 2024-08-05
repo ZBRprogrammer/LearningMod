@@ -1,6 +1,9 @@
 package com.zombromine.learningmod.blocks;
 
 import com.zombromine.learningmod.LearningMod;
+import com.zombromine.learningmod.blocks.custom.FireCrystallizationBlock;
+import com.zombromine.learningmod.blocks.custom.GrassCrystallizationBlock;
+import com.zombromine.learningmod.blocks.custom.WaterCrystallizationBlock;
 import com.zombromine.learningmod.items.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -28,19 +31,19 @@ public class ModBlocks {
         return toReturn;
     }
     public static final RegistryObject<Block>FIRE_CRYSTALLIZATION_BLOCK=registerBlock("fire_crystallization_block",
-            ()->new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK)
+            ()->new FireCrystallizationBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK)
                     .requiresCorrectToolForDrops()
                     .explosionResistance(120.0F)
                     .strength(7.0F,7.5F)
             ));
     public static final RegistryObject<Block>WATER_CRYSTALLIZATION_BLOCK=registerBlock("water_crystallization_block",
-            ()->new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK)
+            ()->new WaterCrystallizationBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK)
                     .requiresCorrectToolForDrops()
                     .explosionResistance(120.0F)
                     .strength(7.0F,7.5F)
             ));
     public static final RegistryObject<Block>GRASS_CRYSTALLIZATION_BLOCK=registerBlock("grass_crystallization_block",
-            ()->new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK)
+            ()->new GrassCrystallizationBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK)
                     .requiresCorrectToolForDrops()
                     .explosionResistance(120.0F)
                     .strength(7.0F,7.5F)
