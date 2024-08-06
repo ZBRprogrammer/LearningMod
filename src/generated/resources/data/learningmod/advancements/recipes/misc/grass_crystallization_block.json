@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_grass_crystallization": {
+      "conditions": {
+        "items": [
+          {
+            "items": "learningmod:grass_crystallization"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "learningmod:grass_crystallization_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_grass_crystallization"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "learningmod:grass_crystallization_block"
+    ]
+  }
+}

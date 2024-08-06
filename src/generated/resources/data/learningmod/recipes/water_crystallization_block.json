@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "learningmod:water_crystallization"
+    }
+  },
+  "pattern": [
+    "OOO",
+    "OOO",
+    "OOO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "learningmod:water_crystallization_block"
+  }
+}

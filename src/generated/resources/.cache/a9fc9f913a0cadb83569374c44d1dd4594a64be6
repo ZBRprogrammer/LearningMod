@@ -1,0 +1,3 @@
+// 1.20.6	2024-08-06T10:26:55.4075573	Tags for minecraft:block mod id learningmod
+c70d13bedf3c12aead611f50f861fbfca193c1ad data/minecraft/tags/blocks/mineable/pickaxe.json
+c70d13bedf3c12aead611f50f861fbfca193c1ad data/minecraft/tags/blocks/needs_diamond_tool.json

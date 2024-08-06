@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "learningmod:grass_crystallization"
+    }
+  },
+  "pattern": [
+    "OOO",
+    "OOO",
+    "OOO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "learningmod:grass_crystallization_block"
+  }
+}

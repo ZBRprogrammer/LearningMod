@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "learningmod:water_crystallization_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "learningmod:water_crystallization"
+  }
+}

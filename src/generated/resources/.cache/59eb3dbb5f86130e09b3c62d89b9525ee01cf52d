@@ -1,0 +1,4 @@
+// 1.20.6	2024-08-06T10:26:55.4075573	Loot Tables
+484a1c52bfcb4ce352562690c11887cc29bd1361 data/learningmod/loot_tables/blocks/fire_crystallization_block.json
+1818964d10093b3f605644595f3102d6099d0f12 data/learningmod/loot_tables/blocks/grass_crystallization_block.json
+c00e93e5cc84df38861d994b12224cbce5daea75 data/learningmod/loot_tables/blocks/water_crystallization_block.json
