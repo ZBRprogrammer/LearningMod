@@ -6,5 +6,6 @@
   "block.learningmod.water_crystallization_block": "Block of Water Crystallization",
   "item.learningmod.grass_crystallization": "Grass Crystallization",
   "block.learningmod.grass_crystallization_block": "Block of Grass Crystallization",
-  "item.learningmod.element_collector": "Element Collector"
+  "item.learningmod.element_collector": "Element Collector",
+  "tooltip.learningmod.element_collector": "Collect surrounding element"
 }
