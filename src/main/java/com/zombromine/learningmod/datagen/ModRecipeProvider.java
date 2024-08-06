@@ -1,22 +1,29 @@
 package com.zombromine.learningmod.datagen;
 
+import com.zombromine.learningmod.LearningMod;
+import com.zombromine.learningmod.blocks.ModBlocks;
+import com.zombromine.learningmod.items.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
-public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
+public class ModRecipeProvider extends RecipeProvider{
     public ModRecipeProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pRegistries) {
         super(pOutput, pRegistries);
     }
+
 //    private static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModItems.RAW_SAPPHIRE.get(),
 //            ModBlocks.SAPPHIRE_ORE.get(), ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModBlocks.NETHER_SAPPHIRE_ORE.get(),
 //            ModBlocks.END_STONE_SAPPHIRE_ORE.get());
@@ -24,7 +31,57 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.FIRE_CRYSTALLIZATION_BLOCK.get())
+                .pattern("OOO")
+                .pattern("OOO")
+                .pattern("OOO")
+                .define('O', ModItems.FILE_CRYSTALLIZATION.get())
+                .unlockedBy(getHasName(ModItems.FILE_CRYSTALLIZATION.get()),has(ModItems.FILE_CRYSTALLIZATION.get()))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.WATER_CRYSTALLIZATION_BLOCK.get())
+                .pattern("OOO")
+                .pattern("OOO")
+                .pattern("OOO")
+                .define('O', ModItems.WATER_CRYSTALLIZATION.get())
+                .unlockedBy(getHasName(ModItems.WATER_CRYSTALLIZATION.get()),has(ModItems.WATER_CRYSTALLIZATION.get()))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GRASS_CRYSTALLIZATION_BLOCK.get())
+                .pattern("OOO")
+                .pattern("OOO")
+                .pattern("OOO")
+                .define('O', ModItems.GRASS_CRYSTALLIZATION.get())
+                .unlockedBy(getHasName(ModItems.GRASS_CRYSTALLIZATION.get()),has(ModItems.GRASS_CRYSTALLIZATION.get()))
+                .save(recipeOutput);
 
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ELEMENT_COLLECTOR.get())
+                .pattern("BIA")
+                .pattern("ILI")
+                .pattern("MI ")
+                .define('L', Items.LODESTONE)
+                .define('A', Items.MAGMA_CREAM)
+                .define('B', Items.BLUE_ICE)
+                .define('M', Items.MOSS_BLOCK)
+                .define('I', Items.IRON_INGOT)
+                .unlockedBy(getHasName(Items.LODESTONE),has(Items.LODESTONE))
+                .unlockedBy(getHasName(Items.MAGMA_CREAM),has(Items.MAGMA_CREAM))
+                .unlockedBy(getHasName(Items.BLUE_ICE),has(Items.BLUE_ICE))
+                .unlockedBy(getHasName(Items.MOSS_BLOCK),has(Items.MOSS_BLOCK))
+                .unlockedBy(getHasName(Items.IRON_INGOT),has(Items.IRON_INGOT))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.FILE_CRYSTALLIZATION.get(),9)
+                .requires(ModBlocks.FIRE_CRYSTALLIZATION_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.FIRE_CRYSTALLIZATION_BLOCK.get()),has(ModBlocks.FIRE_CRYSTALLIZATION_BLOCK.get()))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.WATER_CRYSTALLIZATION.get(),9)
+                .requires(ModBlocks.WATER_CRYSTALLIZATION_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.WATER_CRYSTALLIZATION_BLOCK.get()),has(ModBlocks.WATER_CRYSTALLIZATION_BLOCK.get()))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.GRASS_CRYSTALLIZATION.get(),9)
+                .requires(ModBlocks.GRASS_CRYSTALLIZATION_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.GRASS_CRYSTALLIZATION_BLOCK.get()),has(ModBlocks.GRASS_CRYSTALLIZATION_BLOCK.get()))
+                .save(recipeOutput);
     }
 
 //    @Override

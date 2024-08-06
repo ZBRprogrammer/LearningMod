@@ -15,13 +15,13 @@ import java.util.stream.Stream;
 @Mod.EventBusSubscriber(modid = LearningMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
     @SubscribeEvent
-    public static void gatherData(GatherDataEvent event) {
+    public static void onGatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput,CompletableFuture.completedFuture(HolderLookup.Provider.create(Stream.of()))));
+        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput));
 
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));

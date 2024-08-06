@@ -1,6 +1,7 @@
 package com.zombromine.learningmod.datagen;
 
 import com.zombromine.learningmod.LearningMod;
+import com.zombromine.learningmod.blocks.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -14,6 +15,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        blockWithItem(ModBlocks.FIRE_CRYSTALLIZATION_BLOCK);
+        blockWithItem(ModBlocks.WATER_CRYSTALLIZATION_BLOCK);
+        blockWithItem(ModBlocks.GRASS_CRYSTALLIZATION_BLOCK);
 //        blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
 //        blockWithItem(ModBlocks.RAW_SAPPHIRE_BLOCK);
 //
