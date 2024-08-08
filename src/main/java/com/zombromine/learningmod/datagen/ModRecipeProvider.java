@@ -1,23 +1,13 @@
 package com.zombromine.learningmod.datagen;
 
-import com.zombromine.learningmod.LearningMod;
 import com.zombromine.learningmod.blocks.ModBlocks;
 import com.zombromine.learningmod.items.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.AbstractCookingRecipe;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.level.ItemLike;
-import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
-import net.minecraftforge.registries.ForgeRegistries;
 
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
-import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider{
     public ModRecipeProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pRegistries) {
@@ -35,8 +25,8 @@ public class ModRecipeProvider extends RecipeProvider{
                 .pattern("OOO")
                 .pattern("OOO")
                 .pattern("OOO")
-                .define('O', ModItems.FILE_CRYSTALLIZATION.get())
-                .unlockedBy(getHasName(ModItems.FILE_CRYSTALLIZATION.get()),has(ModItems.FILE_CRYSTALLIZATION.get()))
+                .define('O', ModItems.FIRE_CRYSTALLIZATION.get())
+                .unlockedBy(getHasName(ModItems.FIRE_CRYSTALLIZATION.get()),has(ModItems.FIRE_CRYSTALLIZATION.get()))
                 .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.WATER_CRYSTALLIZATION_BLOCK.get())
                 .pattern("OOO")
@@ -70,7 +60,7 @@ public class ModRecipeProvider extends RecipeProvider{
                 .unlockedBy(getHasName(Items.IRON_INGOT),has(Items.IRON_INGOT))
                 .save(recipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.FILE_CRYSTALLIZATION.get(),9)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.FIRE_CRYSTALLIZATION.get(),9)
                 .requires(ModBlocks.FIRE_CRYSTALLIZATION_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.FIRE_CRYSTALLIZATION_BLOCK.get()),has(ModBlocks.FIRE_CRYSTALLIZATION_BLOCK.get()))
                 .save(recipeOutput);

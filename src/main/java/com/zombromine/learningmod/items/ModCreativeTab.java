@@ -13,12 +13,30 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModCreativeTab {
     public static final DeferredRegister<CreativeModeTab>LearningModTabs = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, LearningMod.MODID);
     public static final RegistryObject<CreativeModeTab>LearningModTab=LearningModTabs.register("learning_tab",
-            ()-> CreativeModeTab.builder().icon(()->new ItemStack(ModItems.FILE_CRYSTALLIZATION.get()))
+            ()-> CreativeModeTab.builder().icon(()->new ItemStack(ModItems.FIRE_CRYSTALLIZATION.get()))
                     .title(Component.translatable("creativetab.learning_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.FILE_CRYSTALLIZATION.get());
+                        output.accept(ModItems.FIRE_CRYSTALLIZATION.get());
+                        output.accept(ModItems.FIRE_DEBRIS.get());
+                        output.accept(ModItems.FIRE_POLYMER_LEVEL_1.get());
+                        output.accept(ModItems.FIRE_POLYMER_LEVEL_2.get());
+                        output.accept(ModItems.FIRE_POLYMER_LEVEL_3.get());
+                        output.accept(ModItems.FIRE_POLYMER_LEVEL_4.get());
+                        output.accept(ModItems.FIRE_POLYMER_LEVEL_5.get());
                         output.accept(ModItems.WATER_CRYSTALLIZATION.get());
+                        output.accept(ModItems.WATER_DEBRIS.get());
+                        output.accept(ModItems.WATER_POLYMER_LEVEL_1.get());
+                        output.accept(ModItems.WATER_POLYMER_LEVEL_2.get());
+                        output.accept(ModItems.WATER_POLYMER_LEVEL_3.get());
+                        output.accept(ModItems.WATER_POLYMER_LEVEL_4.get());
+                        output.accept(ModItems.WATER_POLYMER_LEVEL_5.get());
                         output.accept(ModItems.GRASS_CRYSTALLIZATION.get());
+                        output.accept(ModItems.GRASS_DEBRIS.get());
+                        output.accept(ModItems.GRASS_POLYMER_LEVEL_1.get());
+                        output.accept(ModItems.GRASS_POLYMER_LEVEL_2.get());
+                        output.accept(ModItems.GRASS_POLYMER_LEVEL_3.get());
+                        output.accept(ModItems.GRASS_POLYMER_LEVEL_4.get());
+                        output.accept(ModItems.GRASS_POLYMER_LEVEL_5.get());
                         output.accept(ModBlocks.FIRE_CRYSTALLIZATION_BLOCK.get());
                         output.accept(ModBlocks.WATER_CRYSTALLIZATION_BLOCK.get());
                         output.accept(ModBlocks.GRASS_CRYSTALLIZATION_BLOCK.get());

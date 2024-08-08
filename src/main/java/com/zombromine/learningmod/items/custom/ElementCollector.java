@@ -62,55 +62,55 @@ public class ElementCollector extends Item {
                         int ran=rand.nextInt(100);
                         int p=ran>=80?1:0;
                         if(state.is(Blocks.GRASS_BLOCK)){
-                            Update(pContext,ModItems.GRASS_CRYSTALLIZATION.get(),p,Blocks.DIRT,new_pos);
+                            Update(pContext,ModItems.GRASS_DEBRIS.get(),p,Blocks.DIRT,new_pos);
                         }
                         else if(state.is(BlockTags.LEAVES)||state.is(Blocks.SHORT_GRASS)||state.is(Blocks.TALL_GRASS)||state.is(Blocks.SEAGRASS)||state.is(Blocks.TALL_SEAGRASS)||state.is(Blocks.MOSS_BLOCK)||state.is(Blocks.MOSS_CARPET)){
-                            Update(pContext,ModItems.GRASS_CRYSTALLIZATION.get(),p,Blocks.AIR,new_pos);
+                            Update(pContext,ModItems.GRASS_POLYMER_LEVEL_1.get(),p,Blocks.AIR,new_pos);
                         }
                         else if(state.is(Blocks.MOSSY_COBBLESTONE)){
-                            Update(pContext,ModItems.GRASS_CRYSTALLIZATION.get(),zero,Blocks.COBBLESTONE,new_pos);
+                            Update(pContext,ModItems.GRASS_DEBRIS.get(),zero,Blocks.COBBLESTONE,new_pos);
                         }
                         else if(state.is(Blocks.MOSSY_COBBLESTONE_SLAB)){
-                            Update(pContext,ModItems.GRASS_CRYSTALLIZATION.get(),zero,Blocks.COBBLESTONE_SLAB,new_pos);
+                            Update(pContext,ModItems.GRASS_DEBRIS.get(),zero,Blocks.COBBLESTONE_SLAB,new_pos);
                         }
                         else if(state.is(Blocks.MOSSY_COBBLESTONE_STAIRS)){
-                            Update(pContext,ModItems.GRASS_CRYSTALLIZATION.get(),zero,Blocks.COBBLESTONE_STAIRS,new_pos);
+                            Update(pContext,ModItems.GRASS_DEBRIS.get(),zero,Blocks.COBBLESTONE_STAIRS,new_pos);
                         }
                         else if(state.is(Blocks.MOSSY_COBBLESTONE_WALL)){
-                            Update(pContext,ModItems.GRASS_CRYSTALLIZATION.get(),zero,Blocks.COBBLESTONE_WALL,new_pos);
+                            Update(pContext,ModItems.GRASS_DEBRIS.get(),zero,Blocks.COBBLESTONE_WALL,new_pos);
                         }
                         else if(state.is(Blocks.MOSSY_STONE_BRICK_SLAB)){
-                            Update(pContext,ModItems.GRASS_CRYSTALLIZATION.get(),zero,Blocks.STONE_BRICK_SLAB,new_pos);
+                            Update(pContext,ModItems.GRASS_DEBRIS.get(),zero,Blocks.STONE_BRICK_SLAB,new_pos);
                         }
                         else if(state.is(Blocks.MOSSY_STONE_BRICK_STAIRS)){
-                            Update(pContext,ModItems.GRASS_CRYSTALLIZATION.get(),zero,Blocks.STONE_BRICK_STAIRS,new_pos);
+                            Update(pContext,ModItems.GRASS_DEBRIS.get(),zero,Blocks.STONE_BRICK_STAIRS,new_pos);
                         }
                         else if(state.is(Blocks.MOSSY_STONE_BRICKS)){
-                            Update(pContext,ModItems.GRASS_CRYSTALLIZATION.get(),zero,Blocks.STONE_BRICKS,new_pos);
+                            Update(pContext,ModItems.GRASS_DEBRIS.get(),zero,Blocks.STONE_BRICKS,new_pos);
                         }
                         else if(state.is(Blocks.MOSSY_STONE_BRICK_WALL)){
-                            Update(pContext,ModItems.GRASS_CRYSTALLIZATION.get(),zero,Blocks.STONE_BRICK_WALL,new_pos);
+                            Update(pContext,ModItems.GRASS_DEBRIS.get(),zero,Blocks.STONE_BRICK_WALL,new_pos);
                         }
                         else if(state.is(Blocks.INFESTED_MOSSY_STONE_BRICKS)){
-                            Update(pContext,ModItems.GRASS_CRYSTALLIZATION.get(),zero,Blocks.INFESTED_STONE_BRICKS,new_pos);
+                            Update(pContext,ModItems.GRASS_DEBRIS.get(),zero,Blocks.INFESTED_STONE_BRICKS,new_pos);
                         }
                         if(state.is(Blocks.WATER)||state.is(BlockTags.ICE)){
-                            Update(pContext,ModItems.WATER_CRYSTALLIZATION.get(),p,Blocks.AIR,new_pos);
+                            Update(pContext,ModItems.WATER_POLYMER_LEVEL_1.get(),p,Blocks.AIR,new_pos);
                         }
                         else if(state.is(Blocks.WET_SPONGE)){
-                            Update(pContext,ModItems.WATER_CRYSTALLIZATION.get(),num+2,Blocks.SPONGE,new_pos);
+                            Update(pContext,ModItems.WATER_DEBRIS.get(),num+2,Blocks.SPONGE,new_pos);
                         }
                         else if(state.is(Blocks.WATER_CAULDRON)){
-                            Update(pContext,ModItems.WATER_CRYSTALLIZATION.get(),num+2,Blocks.CAULDRON,new_pos);
+                            Update(pContext,ModItems.WATER_POLYMER_LEVEL_1.get(),num+2,Blocks.CAULDRON,new_pos);
                         }
                         if(state.is(Blocks.LAVA_CAULDRON)){
-                            Update(pContext,ModItems.FILE_CRYSTALLIZATION.get(),num+2,Blocks.CAULDRON,new_pos);
+                            Update(pContext,ModItems.FIRE_POLYMER_LEVEL_1.get(),num+2,Blocks.CAULDRON,new_pos);
                         }
                         else if(state.is(Blocks.LAVA)||state.is(Blocks.FIRE)){
-                            Update(pContext,ModItems.FILE_CRYSTALLIZATION.get(),num,Blocks.AIR,new_pos);
+                            Update(pContext,ModItems.FIRE_POLYMER_LEVEL_1.get(),num,Blocks.AIR,new_pos);
                         }
                         else if(state.is(Blocks.MAGMA_BLOCK)){
-                            Update(pContext,ModItems.FILE_CRYSTALLIZATION.get(),num,Blocks.NETHERRACK,new_pos);
+                            Update(pContext,ModItems.FIRE_DEBRIS.get(),num,Blocks.NETHERRACK,new_pos);
                         }
                     }
                 }

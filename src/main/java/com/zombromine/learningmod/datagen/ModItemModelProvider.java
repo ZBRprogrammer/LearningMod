@@ -1,7 +1,6 @@
 package com.zombromine.learningmod.datagen;
 
 import com.zombromine.learningmod.LearningMod;
-import com.zombromine.learningmod.blocks.ModBlocks;
 import com.zombromine.learningmod.items.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -20,7 +19,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.FILE_CRYSTALLIZATION);
+        simpleItem(ModItems.FIRE_CRYSTALLIZATION);
         simpleItem(ModItems.WATER_CRYSTALLIZATION);
         simpleItem(ModItems.GRASS_CRYSTALLIZATION);
         simpleItem(ModItems.ELEMENT_COLLECTOR);
